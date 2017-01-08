@@ -1,0 +1,347 @@
+/*Class icon luôn active*/
+.alway-active,.alway-active[class*='fa-']{
+    animation-play-state:running;
+    -webkit-animation-play-state:running;
+    -moz-animation-play-state:running;
+    -o-animation-play-state:running;
+}
+.alway-active-word,.alway-active-word[class*='intro-']{
+    animation-play-state:running;
+    -webkit-animation-play-state:running;
+    -moz-animation-play-state:running;
+    -o-animation-play-state:running;
+}
+/*Class zoom icon từ 0.8 lên 1.2 trong 1s*/
+.icon-zoom {
+    animation-name: icon-zoom;
+
+    /*Thời gian hoạt zoom 1s*/
+    animation-duration: 1s;
+
+    /*Thời gian zoom tiếp theo 0s*/
+    animation-delay: 0s;
+
+    /*Số lần zoom */
+    animation-iteration-count:infinite;
+
+    /*effect*/
+    animation-timing-function:ease-in-out;
+
+    /*mặc định pause*/
+    animation-play-state:paused;
+
+    /*lặp lại*/
+    animation-direction: alternate;
+
+    -webkit-animation-name: icon-zoom;
+    -webkit-animation-duration: 1s;
+    -webkit-animation-delay: 0s;
+    -webkit-animation-iteration-count:infinite;
+    -webkit-animation-timing-function:ease-in-out;
+    -webkit-animation-play-state:paused;
+    -webkit-animation-direction: alternate;
+
+    -moz-animation-name: icon-zoom;
+    -moz-animation-duration: 1s;
+    -moz-animation-delay: 0s;
+    -moz-animation-iteration-count:infinite;
+    -moz-animation-timing-function:ease-in-out;
+    -moz-animation-play-state:paused;
+    -moz-animation-direction: alternate;
+
+    -o-animation-name: icon-zoom;
+    -o-animation-duration: 1s;
+    -o-animation-delay: 0s;
+    -o-animation-iteration-count:infinite;
+    -o-animation-timing-function:ease-in-out;
+    -o-animation-play-state:paused;
+    -o-animation-direction: alternate;
+}
+
+@-webkit-keyframes icon-zoom {
+    0% {
+        -webkit-transform: scale(0.8);
+        transform: scale(0.8);
+    }
+    100% {
+        -webkit-transform: scale(1.2);
+        transform: scale(1.2);
+    }
+}
+@-moz-keyframes icon-zoom {
+    0% {
+        -moz-transform: scale(0.8);
+        transform: scale(0.8);
+    }
+    100% {
+        -moz-transform: scale(1.2);
+        transform: scale(1.2);
+    }
+}
+@-o-keyframes icon-zoom {
+    0% {
+        -o-transform: scale(0.8);
+        transform: scale(0.8);
+    }
+    100% {
+        -o-transform: scale(1.2);
+        transform: scale(1.2);
+    }
+}
+@keyframes icon-zoom {
+    0% {
+        -webkit-transform: scale(0.8);
+        transform: scale(0.8);
+    }
+    100% {
+        -webkit-transform: scale(1.2);
+        transform: scale(1.2);
+    }
+}
+
+.word-left-to-right{
+    animation-name: left-to-right;
+
+    /*Thời gian từ left to right*/
+    animation-duration: 2s;
+
+    animation-delay: 0s;
+
+    animation-iteration-count: 1;
+
+    animation-timing-function:linear;
+
+    animation-play-state:paused;
+
+    animation-direction: normal;
+
+    -webkit-animation-name: left-to-right;
+    -webkit-animation-duration: 2s;
+    -webkit-animation-delay: 0s;
+    -webkit-animation-iteration-count:1;
+    -webkit-animation-timing-function:linear;
+    -webkit-animation-play-state:paused;
+    -webkit-animation-direction: normal;
+
+    -moz-animation-name: left-to-right;
+    -moz-animation-duration: 2s;
+    -moz-animation-delay: 0s;
+    -moz-animation-iteration-count:1;
+    -moz-animation-timing-function:linear;
+    -moz-animation-play-state:paused;
+    -moz-animation-direction: normal;
+
+    -o-animation-name: left-to-right;
+    -o-animation-duration: 2s;
+    -o-animation-delay: 0s;
+    -o-animation-iteration-count:1;
+    -o-animation-timing-function:linear;
+    -o-animation-play-state:paused;
+    -o-animation-direction: normal;
+}
+@keyframes left-to-right {
+    from, 60%, 75%, 90%, to {
+        animation-timing-function: cubic-bezier(0.215, 0.610, 0.355, 1.000);
+    }
+
+    0% {
+        opacity: 0;
+        transform: translate3d(-500px, 0, 0);
+    }
+
+    60% {
+        opacity: 1;
+        transform: translate3d(25px, 0, 0);
+    }
+
+    75% {
+        transform: translate3d(-25px, 0, 0);
+    }
+
+    90% {
+        transform: translate3d(5px, 0, 0);
+    }
+
+    to {
+        transform: none;
+    }
+}
+@-webkit-keyframes left-to-right {
+    from, 60%, 75%, 90%, to {
+        -webkit-animation-timing-function: cubic-bezier(0.215, 0.610, 0.355, 1.000);
+    }
+
+    0% {
+        opacity: 0;
+        -webkit-transform: translate3d(-500px, 0, 0);
+    }
+
+    60% {
+        opacity: 1;
+        -webkit-transform: translate3d(25px, 0, 0);
+    }
+
+    75% {
+        -webkit-transform: translate3d(-25px, 0, 0);
+    }
+
+    90% {
+        -webkit-transform: translate3d(5px, 0, 0);
+    }
+
+    to {
+        -webkit-transform: none;
+    }
+}
+@-moz-keyframes left-to-right {
+    from, 60%, 75%, 90%, to {
+        -moz-animation-timing-function: cubic-bezier(0.215, 0.610, 0.355, 1.000);
+    }
+
+    0% {
+        opacity: 0;
+        -moz-transform: translate3d(-500px, 0, 0);
+    }
+
+    60% {
+        opacity: 1;
+        -moz-transform: translate3d(25px, 0, 0);
+    }
+
+    75% {
+        -moz-transform: translate3d(-25px, 0, 0);
+    }
+
+    90% {
+        -moz-transform: translate3d(5px, 0, 0);
+    }
+
+    to {
+        -moz-transform: none;
+    }
+}
+
+@-o-keyframes left-to-right {
+    from, 60%, 75%, 90%, to {
+        -o-animation-timing-function: cubic-bezier(0.215, 0.610, 0.355, 1.000);
+    }
+
+    0% {
+        opacity: 0;
+        -o-transform: translate3d(-500px, 0, 0);
+    }
+
+    60% {
+        opacity: 1;
+        -o-transform: translate3d(25px, 0, 0);
+    }
+
+    75% {
+        -o-transform: translate3d(-25px, 0, 0);
+    }
+
+    90% {
+        -o-transform: translate3d(5px, 0, 0);
+    }
+
+    to {
+        -o-transform: none;
+    }
+}
+
+.word-top-to-bot{
+    animation-name: top-to-bot;
+
+    animation-duration: 2s;
+
+    animation-delay: 0s;
+
+    animation-iteration-count: 1;
+
+    animation-timing-function:linear;
+
+    animation-play-state:paused;
+
+    animation-direction: normal;
+
+    -webkit-animation-name: top-to-bot;
+    -webkit-animation-duration: 2s;
+    -webkit-animation-delay: 0s;
+    -webkit-animation-iteration-count:1;
+    -webkit-animation-timing-function:linear;
+    -webkit-animation-play-state:paused;
+    -webkit-animation-direction: normal;
+
+    -moz-animation-name: top-to-bot;
+    -moz-animation-duration: 2s;
+    -moz-animation-delay: 0s;
+    -moz-animation-iteration-count:1;
+    -moz-animation-timing-function:linear;
+    -moz-animation-play-state:paused;
+    -moz-animation-direction: normal;
+
+    -o-animation-name: top-to-bot;
+    -o-animation-duration: 2s;
+    -o-animation-delay: 0s;
+    -o-animation-iteration-count:1;
+    -o-animation-timing-function:linear;
+    -o-animation-play-state:paused;
+    -o-animation-direction: normal;
+}
+@keyframes top-to-bot {
+    0% {
+        transform: translateY(-100%);
+        opacity: 0;
+    }
+    50% {
+        transform: translateY(0%);
+        opacity: 1;
+    }
+    100% {
+        transform: translateY(50%);
+        opacity: 0;
+    }
+}
+@-webkit-keyframes top-to-bot {
+    0% {
+        -webkit-transform: translateY(-100%);
+        opacity: 0;
+    }
+    50% {
+        -webkit-transform: translateY(0%);
+        opacity: 1;
+    }
+    100% {
+        -webkit-transform: translateY(50%);
+        opacity: 0;
+    }
+}
+@-moz-keyframes top-to-bot {
+    0% {
+        -moz-transform: translateY(-100%);
+        opacity: 0;
+    }
+    50% {
+        -moz-transform: translateY(0%);
+        opacity: 1;
+    }
+    100% {
+        -moz-transform: translateY(50%);
+        opacity: 0;
+    }
+}
+
+@-o-keyframes top-to-bot {
+    0% {
+        -o-transform: translateY(-100%);
+        opacity: 0;
+    }
+    50% {
+        -o-transform: translateY(0%);
+        opacity: 1;
+    }
+    100% {
+        -o-transform: translateY(50%);
+        opacity: 0;
+    }
+}
