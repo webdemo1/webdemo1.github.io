@@ -985,6 +985,7 @@ img::-moz-selection {
     font-size: 14px;
     font-weight: bold;
     margin-left: 15px;
+    float: left;
 }
 
 .is-hiring:hover, .is-hiring:focus {
