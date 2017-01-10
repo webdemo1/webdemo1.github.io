@@ -61,7 +61,17 @@ h1,h2,h3,h4,h5,h6{font-family:Montserrat,"Helvetica Neue",Helvetica,Arial,sans-s
 }
 @media (min-width:768px)
 {
-    .navbar-default{background-color:transparent;padding:25px 0;-webkit-transition:padding .3s;-moz-transition:padding .3s;transition:padding .3s;border:0}
+    .navbar-default{
+		background-color: white;
+		padding: 5px 0;
+		-webkit-transition: padding .3s;
+		-moz-transition: padding .3s;
+		transition: padding .3s;
+		border: 0;
+		bottom: 0px;
+		top: inherit;
+		margin: 0px;
+	}
     .navbar-default .navbar-brand{font-size:2em;-webkit-transition:all .3s;-moz-transition:all .3s;transition:all .3s}
     .navbar-default .navbar-nav>.active>a{border-radius:3px}
     .navbar-default.navbar-shrink{
