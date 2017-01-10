@@ -149,7 +149,7 @@ h1, h2, h3, h4, h5, h6 {
     text-transform: uppercase;
     font-weight: 400;
     letter-spacing: 1px;
-    color: #fff
+    color: black;
 }
 
 .navbar-default .nav li a:hover {
@@ -188,14 +188,15 @@ h1, h2, h3, h4, h5, h6 {
 
 @media (min-width: 768px) {
     .navbar-default {
-        background-color: transparent;
-        padding: 25px 0;
-        -webkit-transition: padding .3s;
-        -moz-transition: padding .3s;
-        transition: padding .3s;
-        border: 0;
-        bottom: 0px;
-        top: inherit;
+		background-color: white;
+		padding: 5px;
+		-webkit-transition: padding .3s;
+		-moz-transition: padding .3s;
+		transition: padding .3s;
+		border: 0;
+		bottom: 0px;
+		top: inherit;
+		margin: 0px;
     }
 
     .navbar-default .navbar-brand {
