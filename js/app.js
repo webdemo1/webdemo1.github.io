@@ -46,7 +46,7 @@ $(document).ready(function () {
     });
     var height = $(window).outerHeight(true);
     $('#portfolio').height(height);
-    if (window.matchMedia('(max-width: 767px)').matches) {
+    if (window.matchMedia('(max-width: 768px)').matches) {
         $('#portfolio').css('padding-top', '50px');
         $('.owl-carousel').css('height', height - 50);
         $('.owl-stage-outer').css('height', height - 50);
