@@ -188,15 +188,15 @@ h1, h2, h3, h4, h5, h6 {
 
 @media (min-width: 768px) {
     .navbar-default {
-		background-color: white;
-		padding: 5px;
-		-webkit-transition: padding .3s;
-		-moz-transition: padding .3s;
-		transition: padding .3s;
-		border: 0;
-		bottom: 0px;
-		top: inherit;
-		margin: 0px;
+        background-color: white;
+        padding: 5px;
+        -webkit-transition: padding .3s;
+        -moz-transition: padding .3s;
+        transition: padding .3s;
+        border: 0;
+        bottom: 0px;
+        top: inherit;
+        margin: 0px;
     }
 
     .navbar-default .navbar-brand {
@@ -220,6 +220,13 @@ h1, h2, h3, h4, h5, h6 {
 
     .navbar-default.navbar-shrink .navbar-brand {
         font-size: 1.5em
+    }
+
+    #vision .container {
+        position: absolute;
+        top: 150px;
+        left: 0px;
+        right: 0px;
     }
 }
 
@@ -1112,4 +1119,51 @@ img::-moz-selection {
 
 .bxslider .banner-product:hover {
     text-decoration: none;
+}
+
+.container-fluid {
+    width: 100%;
+    height: 100%;
+}
+
+.header-unit {
+    height: 100%;
+    position: relative;
+}
+
+#video-container {
+    position: absolute;
+}
+
+#video-container {
+    top: 0%;
+    left: 0%;
+    height: 100%;
+    width: 100%;
+    overflow: hidden;
+}
+
+video {
+    position: absolute;
+    z-index: 0;
+}
+
+video.fillWidth {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+#vision {
+    padding: 0px;
+    position: relative;
+    width: 100%;
+    height: 100%;
+}
+
+#vision .container {
+    position: absolute;
+    top: 100px;
+    left: 0px;
+    right: 0px;
 }

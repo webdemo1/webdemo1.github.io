@@ -9,15 +9,15 @@ $(document).ready(function () {
 
         responsive: {
             0: {
-                items: 1,
-                nav: false
-            },
-            600: {
                 items: 3,
                 nav: false
             },
-            1000: {
+            600: {
                 items: 5,
+                nav: false
+            },
+            1000: {
+                items: 8,
                 nav: false,
                 loop: true,
                 autoplayHoverPause: true
@@ -58,7 +58,7 @@ $(document).ready(function () {
         $('.owl-item img').css('height', height - 70);
         $('.owl-item img').mouseenter(function () {
             $(this).parents(".owl-item").css("z-index", 99);
-            $(this).css({'-webkit-transform': 'scale(1.3,1)', '-ms-transform': 'scale(1.3,1)', 'transform': 'scale(1.3,1)', 'opacity': 1});
+            $(this).css({'-webkit-transform': 'scale(2.0,1)', '-ms-transform': 'scale(2.0,1)', 'transform': 'scale(2.0,1)', 'opacity': 1});
         });
         $('.owl-item img').mouseleave(function () {
             $(this).parents(".owl-item").css('z-index', '');
@@ -66,7 +66,7 @@ $(document).ready(function () {
         });
         $('.owl-item span').mouseenter(function () {
             $(this).closest('.image').find('img').trigger('mouseenter');
-            $(this).closest('.image').find('img').css({'-webkit-transform': 'scale(1.3,1)', '-ms-transform': 'scale(1.3,1)', 'transform': 'scale(1.3,1)', 'opacity': 1});
+            $(this).closest('.image').find('img').css({'-webkit-transform': 'scale(2.0,1)', '-ms-transform': 'scale(2.0,1)', 'transform': 'scale(2.0,1)', 'opacity': 1});
         });
         $('.owl-item span').mouseleave(function () {
             $(this).closest('.image').find('img').css('z-index', '');
