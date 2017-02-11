@@ -633,7 +633,9 @@ section h3.section-subheading {
 }
 
 @media (max-width: 767px) {
-
+	#portfolio{
+		    height: 1166px !important;
+	}
     #about h2 {
         font-size: 30px !important;
     }
