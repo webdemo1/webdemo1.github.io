@@ -639,10 +639,12 @@ section h3.section-subheading {
 	
 	.portfolio-content p {
 		width: 90% !important;
+		margin: 0 auto;
 	}
 	
 	#vision p{
 		width: 90% !important;
+				margin: 0 auto;
 	}
     #about h2 {
         font-size: 30px !important;
@@ -1244,15 +1246,20 @@ video.fillWidth {
     margin: -50px 0px;
 }
 
-.background-content button{
+.background-content a{
     position: absolute;
     left: 50%;
     text-align: center;
     top: 50%;
     margin: 20px -60px;
-	background-color: rgba(199, 199, 197, 1) !important;
+    background-color: rgba(199, 199, 197, 1) !important;
+    padding: 10px;
+    color: white;
 }
 
+.background-content a:hover, .background-content a:focus{
+	text-decoration: none;
+}
 .learn-more{
 	border-radius: 50px;
     border: none;
