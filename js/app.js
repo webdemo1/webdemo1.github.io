@@ -46,7 +46,7 @@ $(document).ready(function () {
     });
     var height = $(window).outerHeight(true);
     $('#portfolio').height(900);
-	$('#vision').height(900);
+	$('#vision').height(1000);
     if (window.matchMedia('(max-width: 768px)').matches) {
         $('#portfolio').css('padding-top', '50px');
         $('.owl-carousel').css('height', height - 50);
@@ -74,5 +74,7 @@ $(document).ready(function () {
             $(this).closest('.image').find('img').css({'-webkit-transform': 'scale(1,1)', '-ms-transform': 'scale(1,1)', 'transform': 'scale(1,1)', 'opacity': 0.7});
         });
     }
+	
+	
 
 });
