@@ -44,7 +44,8 @@ $(function() {
 					name: document.querySelector('#name').value,
 					email: document.querySelector('#email').value,
 					password: document.querySelector('#password').value,
-				  })
+				  });
+				  window.location = login.html;
 			  } else {
 				alert('Please fill atlease name or email!');
 			  }
@@ -58,7 +59,7 @@ $(function() {
 				  snap.forEach(function(childSnap){
 					if(document.querySelector('#namelogin').value == childSnap.val().name && document.querySelector('#passwordlogin').value == childSnap.val().password)
 					{
-						window.location = index.html;
+						window.location = edit.html;
 					}
 				  });
 				});
