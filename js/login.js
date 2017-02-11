@@ -29,4 +29,39 @@ $(function() {
 				$(".header_title").text('Login');
 				return false;
 		});
+		
+		//create firebase reference
+		var dbRef = new Firebase("https://popping-inferno-4049.firebaseio.com/");
+		var contactsRef = dbRef.child('contacts');
+		
+		//save contact
+		$(document).ready(function(){
+			$("#submit").click(function(event){
+			  event.preventDefault();
+			  if( document.querySelector('#name').value != '' || document.querySelector('#email').value != '' ){
+				contactsRef
+				  .push({
+					name: document.querySelector('#name').value,
+					email: document.querySelector('#email').value,
+					password: document.querySelector('#password').value,
+				  })
+			  } else {
+				alert('Please fill atlease name or email!');
+			  }
+			});
+			
+			$("#login").click(function(event){
+				
+				var listUsers = null;
+				contactsRef.on("value", function(snap) {
+				  listUsers = snap.val();
+				  snap.forEach(function(childSnap){
+					if(document.querySelector('#namelogin').value == childSnap.val().name && document.querySelector('#passwordlogin').value == childSnap.val().password)
+					{
+						window.location = index.html;
+					}
+				  });
+				});
+			});
+		});
 });
