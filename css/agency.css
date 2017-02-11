@@ -228,6 +228,36 @@ h1, h2, h3, h4, h5, h6 {
         left: 0px;
         right: 0px;
     }
+	
+	.visoncol .col-md-4 {
+    background-color: white;
+    color: black;
+    margin: 0px 10px;
+    width: 30%;
+}
+.visoncol .col-md-4{
+    background-color: white;
+        color: #61615E;
+    padding: 0px;
+    height: 631px;
+	float: left;
+}
+
+.visoncol .col-md-4 img{
+	    width: 100%;
+    object-fit: cover;
+    height: 200px;
+}
+
+.visoncol .col-md-4 h4{
+	    font-size: 36px;
+    padding: 50px 0px;
+}
+.visoncol .col-md-4 button
+{
+	margin: 50px 0px;
+	color: white;
+	}
 }
 
 header {
@@ -287,6 +317,9 @@ header .intro-text .intro-heading {
         line-height: 75px;
         margin-bottom: 50px
     }
+	#about{
+	        padding: 250px 0px;
+		}
 }
 
 section {
@@ -697,6 +730,31 @@ section h3.section-subheading {
         background: #fff;
         -webkit-transform: translate(-40px, 0) rotate(45deg);
     }
+	
+	.navbar-brand {
+		padding: 0px;
+    font: inherit;
+    font-size: 17px !important;
+    color: black;
+    margin-top: 17px;
+    height: auto;
+	}
+	
+	#about{
+		    padding: 150px 0px;
+	}
+}
+
+
+@media (min-width: 768px) and (max-width: 991px){
+	.navbar-default .navbar-brand{
+		padding: 0px;
+		font: inherit;
+		font-size: 20px !important;
+		color: black;
+		height: 0px;
+		margin-top: 10px;
+	}
 }
 
 .team-member {
@@ -1084,9 +1142,6 @@ img::-moz-selection {
     color: white;
 }
 
-#portfolio {
-    background: #8BC34A;
-}
 
 #vision {
     background: #8BC34A;
@@ -1166,4 +1221,60 @@ video.fillWidth {
     top: 100px;
     left: 0px;
     right: 0px;
+}
+.background-content h1{
+    position: absolute;
+    text-align: center;
+    left: 0px;
+    right: 0px;
+    color: white;
+    top: 50%;
+    transform: translateY(-50%);
+    font-size: 50px;
+    margin: -50px 0px;
+}
+
+.background-content button{
+    position: absolute;
+    left: 50%;
+    text-align: center;
+    top: 50%;
+    margin: 20px -60px;
+	background-color: rgba(199, 199, 197, 1) !important;
+}
+
+.learn-more{
+	border-radius: 50px;
+    border: none;
+		background-color: rgba(73, 73, 71, 0.63);
+	    width: 120px;
+    height: 44px;
+}
+
+.portfolio-content{
+	    text-align: center;
+}
+
+.portfolio-content h1{
+	font-size: 40px;
+}
+
+.portfolio-content 	p{
+	    width: 60%;
+    margin: 0 auto;
+    padding: 20px 0px;
+}
+
+#about{
+	    background-color: #ccc;
+}
+
+#portfolio{
+	    background-color: #eee;
+}
+
+
+
+#vision{
+	    color: #61615E;
 }
