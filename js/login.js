@@ -106,7 +106,7 @@ $(function() {
 			});
 			
 			/* Edit js */
-			$("textarea").jqte();
+			$(".text-area-pro").jqte();
 			$("#aboutusbutton").click(function(){
 				event.preventDefault();
 				aboutusRef
