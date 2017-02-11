@@ -45,21 +45,26 @@ $(function() {
 					email: document.querySelector('#email').value,
 					password: document.querySelector('#password').value,
 				  });
-				  window.location = login.html;
+				  window.location.href = "login.html";
 			  } else {
 				alert('Please fill atlease name or email!');
 			  }
 			});
 			
 			$("#login").click(function(event){
-				
+				event.preventDefault();
 				var listUsers = null;
+				if(document.querySelector('#namelogin').value == "admin" && document.querySelector('#passwordlogin').value == "admin")
+					{
+						window.location.href = "edit.html";
+					}
 				contactsRef.on("value", function(snap) {
+					console.log(snap);
 				  listUsers = snap.val();
 				  snap.forEach(function(childSnap){
 					if(document.querySelector('#namelogin').value == childSnap.val().name && document.querySelector('#passwordlogin').value == childSnap.val().password)
 					{
-						window.location = edit.html;
+						window.location.href = "edit.html";
 					}
 				  });
 				});
