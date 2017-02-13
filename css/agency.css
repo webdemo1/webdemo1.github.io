@@ -763,13 +763,6 @@ section h3.section-subheading {
 	
 	#contact .contact-content{padding: 0px 30px;}
 	
-	#accordion-wrapper .slide img {
-		width: 200px !important;
-		object-fit: cover;
-	}
-	#accordion-wrapper {
-		margin: 0 auto !important;
-	}
 }
 
 
@@ -781,6 +774,16 @@ section h3.section-subheading {
 		color: black;
 		height: 0px;
 		margin-top: 10px;
+	}
+}
+
+@media (max-width: 991px){
+		#accordion-wrapper .slide img {
+		width: 200px !important;
+		object-fit: cover;
+	}
+	#accordion-wrapper {
+		margin: 0 auto !important;
 	}
 }
 
@@ -1408,4 +1411,10 @@ video.fillWidth {
 .btn-success{
 	margin: 0 auto;
     display: table;
+}
+
+.nav>li>a {
+    position: relative;
+    display: block;
+    padding: 15px 14px;
 }

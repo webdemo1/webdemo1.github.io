@@ -18,19 +18,27 @@ $(document).ready(function () {
     var height = $(window).outerHeight(true);
     $('#portfolio').height(900);
 	$('#vision').height(1000);
-    if (window.matchMedia('(max-width: 767px)').matches) {
-        $('#portfolio').css('padding-top', '70px');
+	if (window.matchMedia('(max-width: 991px)').matches) {
 		$('#accordion-wrapper').raccordion({
-			sliderWidth: $(window).width(),
+			sliderWidth: $(".container").width(),
 			sliderHeight: 500,
 		});
 		$('#accordion-wrapper .slide img').height(500);
-    } else {
+	}else{
 		$('#accordion-wrapper').raccordion({
 			sliderWidth: $(".container").width(),
 			sliderHeight: 600,
 		});
 		$('#accordion-wrapper .slide img').height(600);
+	}
+    if (window.matchMedia('(max-width: 767px)').matches) {
+        $('#portfolio').css('padding-top', '70px');
+				$('#accordion-wrapper').raccordion({
+			sliderWidth: $(window).width(),
+			sliderHeight: 500,
+		});
+		$('#accordion-wrapper .slide img').height(500);
+    } else {
         $('#portfolio').css('padding-top', '70px');
         $('.image-group .image img').mouseenter(function () {
 			$(this).parents('.image-group .image').css("z-index", 99);
