@@ -1405,3 +1405,7 @@ video.fillWidth {
 	height: 150px;
     padding: 0 5px 100px;
 }
+.btn-success{
+	margin: 0 auto;
+    display: table;
+}

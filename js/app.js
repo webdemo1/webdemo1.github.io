@@ -1,30 +1,4 @@
 $(document).ready(function () {
-    $('.owl-carousel').owlCarousel({
-        autoplay: true,
-        autoplayTimeout: 1000,
-        autoplayHoverPause: false,
-        loop: true,
-        margin: 0,
-        responsiveClass: true,
-
-        responsive: {
-            0: {
-                items: 1,
-                nav: false
-            },
-            600: {
-                items: 3,
-                nav: false
-            },
-            1000: {
-                items: 9,
-                nav: false,
-                loop: true,
-                autoplayHoverPause: true
-            }
-        }
-    });
-	
 	
     $('#ishiring').click(function () {
         $('#myModal').modal('show');

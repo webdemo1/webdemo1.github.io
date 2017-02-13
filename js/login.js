@@ -48,7 +48,6 @@ $(function() {
 			servicesRef.on("value", function(snap) {
 				event.preventDefault();
 				snap.forEach(function(childSnap){
-					console.log(childSnap.val());
 					$("#servicescontent").html(childSnap.val().content);
 					$("#servicesimg1").attr('src', childSnap.val().img1);
 					$("#servicesimg2").attr('src', childSnap.val().img2);
@@ -65,7 +64,6 @@ $(function() {
 			visionRef.on("value", function(snap) {
 				event.preventDefault();
 				snap.forEach(function(childSnap){
-					console.log(childSnap.val());
 					$("#visioncontent1").html(childSnap.val().content1);
 					$("#visioncontent2").html(childSnap.val().content2);
 					$("#visionimg1").attr('src', childSnap.val().img1);
@@ -119,7 +117,6 @@ $(function() {
 			
 			$("#servicesbutton").click(function(){
 				event.preventDefault();
-				console.log($("#servicesadmin").val());
 				$("#aboutuscontent").html($("#servicesadmin").val());
 				servicesRef
 				  .push({
@@ -139,7 +136,6 @@ $(function() {
 			
 			$("#visionbutton").click(function(){
 				event.preventDefault();
-				console.log($("#visioncontent1admin").val());
 				$("#aboutuscontent").html($("#aboutusadmin").val());
 				visionRef
 				  .push({
