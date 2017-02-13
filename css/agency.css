@@ -755,6 +755,21 @@ section h3.section-subheading {
 	#about{
 		    padding: 150px 0px;
 	}
+	
+	#contact .contact-form {
+		float: left !important;
+		width: 100%;
+	}
+	
+	#contact .contact-content{padding: 0px 30px;}
+	
+	#accordion-wrapper .slide img {
+		width: 200px !important;
+		object-fit: cover;
+	}
+	#accordion-wrapper {
+		margin: 0 auto !important;
+	}
 }
 
 
@@ -795,7 +810,7 @@ aside.clients img {
 
 section#contact {
     background-color: #222;
-    background-color: black;
+    background-color: white;
     background-position: center;
     background-repeat: no-repeat
 }
@@ -1107,13 +1122,13 @@ img::-moz-selection {
 }
 
 #myModal .nav-tabs > li {
-    margin-bottom: -2px;
-    width: 33.3333333%;
+	margin-bottom: -2px;
+    width: 50%;
     text-align: center;
 }
 
 #myModal .nav-tabs > li > a {
-    color: white;
+    color: black;
     border-radius: 0px;
 }
 
@@ -1318,4 +1333,75 @@ video.fillWidth {
 	width: 100%;
     height: 500px;
     object-fit: cover;
+}
+
+#accordion-wrapper .slide img{
+	width: 600px;
+	object-fit: cover;
+}
+
+#accordion-wrapper .caption{
+    background: white;
+	width: 500px;
+	margin-bottom: 20px;
+}
+
+#accordion-wrapper .caption p{
+	color: black;
+    font-size: 18px;
+    font-weight: 700;
+}
+
+#accordion-wrapper{
+	margin: 0 15px;
+}
+
+#contact p{
+	padding-top: 15px;
+	font-size: 20px;
+}
+
+#contact .social{
+	padding: 15px;
+}
+
+#contact .social i{
+	font-size: 20px;
+    padding-right: 15px;
+}
+
+#contact .contact-form{
+	float: right;
+}
+
+#contact .contact-form input{
+	width: 100%;
+    border: none;
+    border-bottom: 1px solid black;
+    color: black;
+    padding: 15px 5px;
+    outline: none;
+    font-size: 18px;
+}
+
+#contact .contact-form input::-webkit-input-placeholder { /* Chrome/Opera/Safari */
+  color: black;
+  font-weight: 300
+}
+#contact .contact-form input::-moz-placeholder { /* Firefox 19+ */
+  color: black;
+  font-weight: 300
+}
+#contact .contact-form input:-ms-input-placeholder { /* IE 10+ */
+  color: black;
+  font-weight: 300
+}
+#contact .contact-form input:-moz-placeholder { /* Firefox 18- */
+  color: black;
+  font-weight: 300
+}
+
+#contact .contact-form .contact-message input{
+	height: 150px;
+    padding: 0 5px 100px;
 }
