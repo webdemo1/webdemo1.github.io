@@ -63,6 +63,31 @@
             }
 
 
+            accordionWrapper.find('.slide').hover(function () {
+                var ratio = (((accordionWrapper.width()) - width)) / (totalSlides - 1);
+                if (($(this).width() == $('.slide').width()) || ($(this).width() == ratio)) {
+                    accordionWrapper.find('.slide').removeClass('active');
+                    $(this).addClass('active');
+                    var currentIndex = accordionWrapper.find('.slide').index(this);
+                    accordionWrapper.find('.slide').each(function (index) {
+                        if (index == 0) {
+                            $(this).animate({ left: 0 }, { queue: false, speed: settings.speed, easing: 'quadEaseOut' });
+                        }
+                        else if (index == currentIndex) {
+                            $(this).animate({ left: (index) * ratio }, { queue: false, speed: settings.speed, easing: 'quadEaseOut' });
+                        }
+                        else if (index < currentIndex) {
+                            $(this).animate({ left: (index) * ratio }, { queue: false, speed: settings.speed, easing: 'quadEaseOut' });
+                        }
+                        else if (index > currentIndex) {
+                            $(this).animate({ left: width + (index - 1) * ratio }, { queue: false, speed: settings.speed, easing: 'quadEaseOut' });
+                        }
+
+                    });
+                    animateCaption();
+                }
+            });
+
             accordionWrapper.find('.slide').click(function () {
                 var ratio = (((accordionWrapper.width()) - width)) / (totalSlides - 1);
                 if (($(this).width() == $('.slide').width()) || ($(this).width() == ratio)) {
