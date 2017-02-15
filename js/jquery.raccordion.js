@@ -63,7 +63,7 @@
             }
 
 
-            accordionWrapper.find('.slide').hover(function () {
+            accordionWrapper.find('.slide').mouseenter(function () {
                 var ratio = (((accordionWrapper.width()) - width)) / (totalSlides - 1);
                 if (($(this).width() == $('.slide').width()) || ($(this).width() == ratio)) {
                     accordionWrapper.find('.slide').removeClass('active');
