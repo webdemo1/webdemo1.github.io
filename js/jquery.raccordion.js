@@ -58,8 +58,8 @@
 
 
             function animateCaption() {
-                accordionWrapper.find('.caption').stop().animate({ opacity: 0, bottom: 0 }, { queue: false, speed: settings.speed, easing: 'quadEaseOut' });
-                accordionWrapper.find('.active').find('.caption').stop().animate({ opacity: 1, bottom: 0}, { queue: false, speed: settings.speed, easing: 'quadEaseOut' });
+                accordionWrapper.find('.caption').stop().animate({ opacity: 0, bottom: 0}, { queue: false, speed: settings.speed, easing: 'quadEaseOut' });
+                accordionWrapper.find('.active').find('.caption').stop().animate({ opacity: 1, bottom: 0,display:'block'}, { queue: false, speed: settings.speed, easing: 'quadEaseOut' });
             }
 
 
@@ -67,6 +67,7 @@
                 var ratio = (((accordionWrapper.width()) - width)) / (totalSlides - 1);
                 if (($(this).width() == $('.slide').width()) || ($(this).width() == ratio)) {
                     accordionWrapper.find('.slide').removeClass('active');
+                    $(this).find('.caption').css({ opacity: 1, bottom: 0,display:'block'});
                     $(this).addClass('active');
                     var currentIndex = accordionWrapper.find('.slide').index(this);
                     accordionWrapper.find('.slide').each(function (index) {
@@ -92,6 +93,7 @@
                 var ratio = (((accordionWrapper.width()) - width)) / (totalSlides - 1);
                 if (($(this).width() == $('.slide').width()) || ($(this).width() == ratio)) {
                     accordionWrapper.find('.slide').removeClass('active');
+                    $(this).find('.caption').css({ opacity: 1, bottom: 0,display:'block'});
                     $(this).addClass('active');
                     var currentIndex = accordionWrapper.find('.slide').index(this);
                     accordionWrapper.find('.slide').each(function (index) {
@@ -119,7 +121,7 @@
                     accordionWrapper.find('.slide').each(function (index) {
                         $(this).stop().animate({ left: (index * (accordionWrapper.width()) / totalSlides) }, { queue: false, speed: settings.speed, easing: 'quadEaseOut' });
                     });
-                    accordionWrapper.find('.caption').css({ opacity: 0, bottom: 0 });
+                    accordionWrapper.find('.caption').css({ opacity: 0, bottom: 0,display:'none'});
                 });
             }
 
