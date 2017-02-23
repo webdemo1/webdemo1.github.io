@@ -194,8 +194,6 @@ h1, h2, h3, h4, h5, h6 {
         -moz-transition: padding .3s;
         transition: padding .3s;
         border: 0;
-        bottom: 0px;
-        top: inherit;
         margin: 0px;
     }
 
@@ -537,6 +535,15 @@ section h3.section-subheading {
 
 .timeline .timeline-body > p, .timeline .timeline-body > ul {
     margin-bottom: 0
+}
+
+.menu-style .menu-li-style{
+    background-color: white !important;
+    float: left;
+    width: 50%;
+    text-align: center;
+    clear: none;
+    border-right: 1px solid #ddd;
 }
 
 @media (min-width: 768px) {

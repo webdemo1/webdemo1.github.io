@@ -20,10 +20,10 @@
     <link href="css/owl.theme.default.min.css" rel="stylesheet">
     <link href="css/owl.css" rel="stylesheet">
     <link href="css/jquery.bxslider.css" rel="stylesheet">
-	<link href="css/raccordion.css" rel="stylesheet">
-	<link rel="stylesheet" type="text/css" href="css/content-tools.min.css">
+    <link href="css/raccordion.css" rel="stylesheet">
+    <link rel="stylesheet" type="text/css" href="css/content-tools.min.css">
 
-<!--     Custom Fonts -->
+    <!--     Custom Fonts -->
     <link href="font-awesome/css/font-awesome.min.css" rel="stylesheet" type="text/css">
     <link href="https://fonts.googleapis.com/css?family=Montserrat:400,700" rel="stylesheet" type="text/css">
     <link href='https://fonts.googleapis.com/css?family=Kaushan+Script' rel='stylesheet' type='text/css'>
@@ -34,6 +34,7 @@
 </head>
 
 <body>
+
 <div class="container-fluid hidden-xs" style="position: relative;padding: 0px;" id="page-top">
     <div class="header-unit">
         <div id="video-container">
@@ -41,10 +42,10 @@
                 <source src="video/videobackground1.mp4" type="video/mp4"/>
                 Your browser does not support the video tag. I suggest you upgrade your browser.
             </video>
-			<div class="background-content">
-				<h1>Giải Pháp Ứng Dụng Cho Mọi Doanh Nghiệp</h1>
-				<a href="#portfolio" class="learn-more">Learn More</a>
-			</div>
+            <div class="background-content">
+                <h1>Giải Pháp Ứng Dụng Cho Mọi Doanh Nghiệp</h1>
+                <a href="#portfolio" class="learn-more">Learn More</a>
+            </div>
         </div><!-- end video-container -->
     </div><!-- end .header-unit -->
 </div>
@@ -60,128 +61,159 @@
                 <span class="icon-bar"></span>
                 <span class="icon-bar"></span>
             </button>
-            <a class="navbar-brand page-scroll" href="#page-top" style="padding: 0px; font: inherit; font-size: 35px; color: black;">APPS & PRINT SOLUTIONS</a>
-<!--             <a class="btn is-hiring hidden-xs" id="ishiring">is hiring</a> -->
+            <a class="navbar-brand page-scroll" href="#page-top"
+               style="padding: 0px; font: inherit; font-size: 35px; color: black;">APPS & PRINT SOLUTIONS</a>
+            <!--             <a class="btn is-hiring hidden-xs" id="ishiring">is hiring</a> -->
         </div>
 
         <!-- Collect the nav links, forms, and other content for toggling -->
         <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
             <ul class="nav navbar-nav navbar-right">
-                <li>
+                <li class="visible-xs">
                     <a class="page-scroll hidden-xs" href="#page-top">Home</a>
                 </li>
-				<li>
+                <li class="dropdown hidden-xs">
+                    <a style="padding: 5px 0px;" href="#" class="dropdown-toggle" data-toggle="dropdown"
+                       data-hover="dropdown" data-delay="1000"
+                       data-close-others="false">
+                        <small style="color: black; text-transform: none; line-height: 0px;">Hello. Sign in</small>
+                        <br style="line-height: 0px;">
+                        <b style="color: black; font-size: 13px; line-height: 0px;">Account & Lists</b><b class="caret"
+                                                                                                          style="color: black;"></b>
+                    </a>
+                    <ul class="dropdown-menu menu-style" style="width: 350px;">
+                        <li>
+                            <a class="page-scroll btn btn-default" style="display: block; height: 33px; cursor: pointer; box-shadow: rgb(252, 243, 220) 0px 1px 0px 0px inset; text-align: center; vertical-align: middle; color: rgb(17, 17, 17); font-family: arial, sans-serif; text-decoration: none; line-height: 30px; font-size: 13px; margin: 0px 10px 0px 11px; outline: 0px; border-width: 1px; border-style: solid; border-image: initial; border-color: rgb(200, 148, 17) rgb(176, 130, 15) rgb(153, 113, 13); border-radius: 3px; background: -webkit-linear-gradient(top, rgb(248, 227, 173), rgb(238, 186, 55)); width: 200px; margin: 0 auto; margin-top: 5px;"
+                               data-toggle="modal" data-target="#myModal">Sign in/Register</a>
+                            <b style="display:block;text-align: center;font-size: 18px; padding: 5px 0px; border-top: 1px solid #ddd; margin-top: 10px; width: 90%; margin: 10px auto;">All Categories</b>
+                            <a class="page-scroll menu-li-style" href="#page-top">Home</a>
+                            <a class="page-scroll menu-li-style" href="#about">About</a>
+                            <a class="page-scroll menu-li-style" href="#portfolio">Services</a>
+                            <a class="page-scroll menu-li-style" href="#vision">Vision</a>
+                            <a class="page-scroll menu-li-style" href="#contact">Contact</a>
+                        </li>
+                    </ul>
+                </li>
+                <li class="visible-xs">
                     <a class="page-scroll" href="#about">About</a>
                 </li>
-                <li>
+                <li class="visible-xs">
                     <a class="page-scroll" href="#portfolio">Services</a>
                 </li>
-                <li>
+                <li class="visible-xs">
                     <a class="page-scroll" href="#vision">Vision</a>
                 </li>
-                <li>
+                <li class="visible-xs">
                     <a class="page-scroll" href="#contact">Contact</a>
                 </li>
-				<li>
-					<a class="page-scroll" data-toggle="modal" data-target="#myModal"><i class="fa fa-sign-in" aria-hidden="true"></i></a>
-				</li>
-				
-<!--                 <li class="visible-xs">
-                    <a class="page-scroll hiring-style" href="#is-hiring">ishiring</a>
-                </li> -->
+                <li class="visible-xs">
+                    <a class="page-scroll" data-toggle="modal" data-target="#myModal">Sign-in/Register</a>
+                </li>
+
+                <!--                 <li class="visible-xs">
+                                    <a class="page-scroll hiring-style" href="#is-hiring">ishiring</a>
+                                </li> -->
             </ul>
         </div>
     </div>
 </nav>
- <div class="modal fade bs-modal-sm" id="myModal" tabindex="-1" role="dialog" aria-labelledby="mySmallModalLabel" aria-hidden="true">
-  <div class="modal-dialog modal-sm">
-    <div class="modal-content">
-        <br>
-        <div class="bs-example bs-example-tabs">
-            <ul id="myTab" class="nav nav-tabs">
-              <li class="active"><a href="#signin" data-toggle="tab">Sign In</a></li>
-              <li class=""><a href="#signup" data-toggle="tab">Register</a></li>
-            </ul>
+<div class="modal fade bs-modal-sm" id="myModal" tabindex="-1" role="dialog" aria-labelledby="mySmallModalLabel"
+     aria-hidden="true">
+    <div class="modal-dialog modal-sm">
+        <div class="modal-content">
+            <br>
+            <div class="bs-example bs-example-tabs">
+                <ul id="myTab" class="nav nav-tabs">
+                    <li class="active"><a href="#signin" data-toggle="tab">Sign In</a></li>
+                    <li class=""><a href="#signup" data-toggle="tab">Register</a></li>
+                </ul>
+            </div>
+            <div class="modal-body">
+                <div id="myTabContent" class="tab-content">
+                    <div class="tab-pane fade active in" id="signin">
+                        <form class="form-horizontal">
+                            <fieldset>
+                                <!-- Sign In Form -->
+                                <!-- Text input-->
+                                <div class="control-group">
+                                    <label class="control-label" for="userid">Username:</label>
+                                    <div class="controls">
+                                        <input required="" id="userid" name="userid" type="text" class="form-control"
+                                               placeholder="JoeSixpack" class="input-medium" required="">
+                                    </div>
+                                </div>
+
+                                <!-- Password input-->
+                                <div class="control-group">
+                                    <label class="control-label" for="passwordinput">Password:</label>
+                                    <div class="controls">
+                                        <input required="" id="passwordinput" name="passwordinput" class="form-control"
+                                               type="password" placeholder="********" class="input-medium">
+                                    </div>
+                                </div>
+
+                                <!-- Button -->
+                                <div class="control-group">
+                                    <label class="control-label" for="signin"></label>
+                                    <div class="controls">
+                                        <button id="signin" name="signin" class="btn btn-success">Sign In</button>
+                                    </div>
+                                </div>
+                            </fieldset>
+                        </form>
+                    </div>
+                    <div class="tab-pane fade" id="signup">
+                        <form class="form-horizontal">
+                            <fieldset>
+                                <!-- Sign Up Form -->
+                                <!-- Text input-->
+                                <div class="control-group">
+                                    <label class="control-label" for="Email">Email:</label>
+                                    <div class="controls">
+                                        <input id="Email" name="Email" class="form-control" type="text"
+                                               placeholder="JoeSixpack@sixpacksrus.com" class="input-large" required="">
+                                    </div>
+                                </div>
+
+                                <!-- Text input-->
+                                <div class="control-group">
+                                    <label class="control-label" for="userid">UserName:</label>
+                                    <div class="controls">
+                                        <input id="userid" name="userid" class="form-control" type="text"
+                                               placeholder="JoeSixpack" class="input-large" required="">
+                                    </div>
+                                </div>
+
+                                <!-- Password input-->
+                                <div class="control-group">
+                                    <label class="control-label" for="password">Password:</label>
+                                    <div class="controls">
+                                        <input id="password" name="password" class="form-control" type="password"
+                                               placeholder="********" class="input-large" required="">
+
+                                    </div>
+                                </div>
+                                <!-- Button -->
+                                <div class="control-group">
+                                    <label class="control-label" for="confirmsignup"></label>
+                                    <div class="controls">
+                                        <button id="confirmsignup" name="confirmsignup" class="btn btn-success">Sign
+                                            Up
+                                        </button>
+                                    </div>
+                                </div>
+                            </fieldset>
+                        </form>
+                    </div>
+                </div>
+            </div>
+            <div class="modal-footer">
+                <center>
+                    <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+                </center>
+            </div>
         </div>
-      <div class="modal-body">
-        <div id="myTabContent" class="tab-content">
-        <div class="tab-pane fade active in" id="signin">
-            <form class="form-horizontal">
-            <fieldset>
-            <!-- Sign In Form -->
-            <!-- Text input-->
-            <div class="control-group">
-              <label class="control-label" for="userid">Username:</label>
-              <div class="controls">
-                <input required="" id="userid" name="userid" type="text" class="form-control" placeholder="JoeSixpack" class="input-medium" required="">
-              </div>
-            </div>
-
-            <!-- Password input-->
-            <div class="control-group">
-              <label class="control-label" for="passwordinput">Password:</label>
-              <div class="controls">
-                <input required="" id="passwordinput" name="passwordinput" class="form-control" type="password" placeholder="********" class="input-medium">
-              </div>
-            </div>
-
-            <!-- Button -->
-            <div class="control-group">
-              <label class="control-label" for="signin"></label>
-              <div class="controls">
-                <button id="signin" name="signin" class="btn btn-success">Sign In</button>
-              </div>
-            </div>
-            </fieldset>
-            </form>
-        </div>
-        <div class="tab-pane fade" id="signup">
-            <form class="form-horizontal">
-            <fieldset>
-            <!-- Sign Up Form -->
-            <!-- Text input-->
-            <div class="control-group">
-              <label class="control-label" for="Email">Email:</label>
-              <div class="controls">
-                <input id="Email" name="Email" class="form-control" type="text" placeholder="JoeSixpack@sixpacksrus.com" class="input-large" required="">
-              </div>
-            </div>
-            
-            <!-- Text input-->
-            <div class="control-group">
-              <label class="control-label" for="userid">UserName:</label>
-              <div class="controls">
-                <input id="userid" name="userid" class="form-control" type="text" placeholder="JoeSixpack" class="input-large" required="">
-              </div>
-            </div>
-            
-            <!-- Password input-->
-            <div class="control-group">
-              <label class="control-label" for="password">Password:</label>
-              <div class="controls">
-                <input id="password" name="password" class="form-control" type="password" placeholder="********" class="input-large" required="">
-
-              </div>
-            </div>         
-            <!-- Button -->
-            <div class="control-group">
-              <label class="control-label" for="confirmsignup"></label>
-              <div class="controls">
-                <button id="confirmsignup" name="confirmsignup" class="btn btn-success">Sign Up</button>
-              </div>
-            </div>
-            </fieldset>
-            </form>
-      </div>
     </div>
-      </div>
-      <div class="modal-footer">
-      <center>
-        <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
-        </center>
-      </div>
-    </div>
-  </div>
 </div>
 <section id="about">
     <div class="container">
@@ -193,81 +225,84 @@
         </div>
         <div class="row">
             <div class="col-md-12 text-center">
-                <p style=" font-size: 20px; font-style: italic; line-height: 30px; margin: 0 auto;" id="aboutuscontent">We keep our feet on
+                <p style=" font-size: 20px; font-style: italic; line-height: 30px; margin: 0 auto;" id="aboutuscontent">
+                    We keep our feet on
                     the ground to stay calm and look deeply into our clients’ expectations<br>
                     and help them achieve their goals.</p>
-					<button class="learn-more" style="margin-top: 20px;">Read More</button>
+                <button class="learn-more" style="margin-top: 20px;">Read More</button>
             </div>
         </div>
     </div>
-</section> 
+</section>
 
 <section id="portfolio" style="padding: 0px;">
     <div class="container">
         <div class="row">
-		<div class="portfolio-content">
-			<h1>OUR SERVICES</h1>
-			<p id="servicescontent">This is your Homepage About Section. It’s a great space to write a short snippet of text summarizing what you do and what your site is about. Consider adding an eye catching image and a button that leads the visitor to a full About Section.</p>
-		</div>
-        
-        <div id="accordion-wrapper">
-            <div class="slide">
-                <img id="servicesimg1" src="images/1.jpg" alt="1">   
-                <div class="caption">
-                    <p>Rustic Bread</p>
-                </div>
+            <div class="portfolio-content">
+                <h1>OUR SERVICES</h1>
+                <p id="servicescontent">This is your Homepage About Section. It’s a great space to write a short snippet
+                    of text summarizing what you do and what your site is about. Consider adding an eye catching image
+                    and a button that leads the visitor to a full About Section.</p>
             </div>
-            <div class="slide">
-                <img id="servicesimg2" src="images/2.jpg" alt="1">   
-                <div class="caption">
-                    <p>Rustic Beach Path</p>
+
+            <div id="accordion-wrapper">
+                <div class="slide">
+                    <img id="servicesimg1" src="images/1.jpg" alt="1">
+                    <div class="caption">
+                        <p>Rustic Bread</p>
+                    </div>
                 </div>
-            </div>
-            <div class="slide">
-                <img id="servicesimg3" src="images/3.jpg" alt="1">   
-                <div class="caption">
-                    <p>Martini on Marble</p>
+                <div class="slide">
+                    <img id="servicesimg2" src="images/2.jpg" alt="1">
+                    <div class="caption">
+                        <p>Rustic Beach Path</p>
+                    </div>
                 </div>
-            </div>
-            <div class="slide">
-                <img id="servicesimg4" src="images/4.jpg" alt="1">   
-                <div class="caption">
-                    <p>Martini on Marble</p>
+                <div class="slide">
+                    <img id="servicesimg3" src="images/3.jpg" alt="1">
+                    <div class="caption">
+                        <p>Martini on Marble</p>
+                    </div>
                 </div>
-            </div>
-            <div class="slide">
-                <img id="servicesimg5" src="images/5.jpg" alt="1">   
-                <div class="caption">
-                    <p>Martini on Marble</p>
+                <div class="slide">
+                    <img id="servicesimg4" src="images/4.jpg" alt="1">
+                    <div class="caption">
+                        <p>Martini on Marble</p>
+                    </div>
                 </div>
-            </div>
-            <div class="slide">
-                <img id="servicesimg6" src="images/6.jpg" alt="1">   
-                <div class="caption">
-                    <p>Martini on Marble</p>
+                <div class="slide">
+                    <img id="servicesimg5" src="images/5.jpg" alt="1">
+                    <div class="caption">
+                        <p>Martini on Marble</p>
+                    </div>
                 </div>
-            </div>
-			            <div class="slide">
-                <img id="servicesimg7" src="images/6.jpg" alt="1">   
-                <div class="caption">
-                    <p>Martini on Marble</p>
+                <div class="slide">
+                    <img id="servicesimg6" src="images/6.jpg" alt="1">
+                    <div class="caption">
+                        <p>Martini on Marble</p>
+                    </div>
                 </div>
-            </div>
-			            <div class="slide">
-                <img id="servicesimg8" src="images/1.jpg" alt="1">   
-                <div class="caption">
-                    <p>Martini on Marble</p>
+                <div class="slide">
+                    <img id="servicesimg7" src="images/6.jpg" alt="1">
+                    <div class="caption">
+                        <p>Martini on Marble</p>
+                    </div>
                 </div>
-            </div>
-			            <div class="slide">
-                <img id="servicesimg9" src="images/2.jpg" alt="1">   
-                <div class="caption">
-                    <p>Martini on Marble</p>
+                <div class="slide">
+                    <img id="servicesimg8" src="images/1.jpg" alt="1">
+                    <div class="caption">
+                        <p>Martini on Marble</p>
+                    </div>
+                </div>
+                <div class="slide">
+                    <img id="servicesimg9" src="images/2.jpg" alt="1">
+                    <div class="caption">
+                        <p>Martini on Marble</p>
+                    </div>
                 </div>
             </div>
         </div>
-		</div>
-			
+
     </div>
 </section>
 
@@ -286,90 +321,96 @@
                 <h2 class="section-heading text-center">Vision</h2>
             </div>
             <div class="col-md-12">
-                <p class="text-center" style="width: 60%; margin: 0 auto;" id="visioncontent1">At heart, we aim to be a world-class creative agency appreciated for
-our strategically smart performance and energetic people.</p>
+                <p class="text-center" style="width: 60%; margin: 0 auto;" id="visioncontent1">At heart, we aim to be a
+                    world-class creative agency appreciated for
+                    our strategically smart performance and energetic people.</p>
             </div>
         </div>
         <div class="row" style="margin-top: 20px;">
             <div class="visoncol col-md-12 hidden-xs">
                 <div class="col-md-4 text-center">
-					<img id="visionimg1" src="images/4.jpg" alt="1">
+                    <img id="visionimg1" src="images/4.jpg" alt="1">
                     <h4>APPS FOR SERVICES</h4>
                     <p>Feature Subtitle</p>
-						<button class="learn-more">Get in Touch</button>
+                    <button class="learn-more">Get in Touch</button>
                 </div>
                 <div class="col-md-4 text-center">
                     <h4>24/7 PHONE SUPPORT</h4>
                     <p>Feature Subtitle</p>
-						<button class="learn-more">Get in Touch</button>
-						<img id="visionimg2" src="images/4.jpg" alt="1" style="position: absolute; bottom: 0px; left: 0px; right: 0px;
+                    <button class="learn-more">Get in Touch</button>
+                    <img id="visionimg2" src="images/4.jpg" alt="1" style="position: absolute; bottom: 0px; left: 0px; right: 0px;
 }">
                 </div>
                 <div class="col-md-4 text-center">
-				<img id="visionimg3" src="images/4.jpg" alt="1">
-                                       <h4>PRINT FOR BUSINESS</h4>
+                    <img id="visionimg3" src="images/4.jpg" alt="1">
+                    <h4>PRINT FOR BUSINESS</h4>
                     <p>Feature Subtitle</p>
-						<button class="learn-more">Get in Touch</button>
+                    <button class="learn-more">Get in Touch</button>
                 </div>
             </div>
-			
-			            <div class="visoncol col-md-12 visible-xs">
+
+            <div class="visoncol col-md-12 visible-xs">
                 <div class="col-md-4 text-center">
                     <h4>APPS FOR SERVICES</h4>
                     <p>Feature Subtitle</p>
-						<button class="learn-more">Get in Touch</button>
+                    <button class="learn-more">Get in Touch</button>
                 </div>
                 <div class="col-md-4 text-center">
                     <h4>24/7 PHONE SUPPORT</h4>
                     <p>Feature Subtitle</p>
-						<button class="learn-more">Get in Touch</button>
+                    <button class="learn-more">Get in Touch</button>
                 </div>
                 <div class="col-md-4 text-center">
-                                       <h4>PRINT FOR BUSINESS</h4>
+                    <h4>PRINT FOR BUSINESS</h4>
                     <p>Feature Subtitle</p>
-						<button class="learn-more">Get in Touch</button>
+                    <button class="learn-more">Get in Touch</button>
                 </div>
             </div>
-			
-			<div class="col-md-12" >
-				<p id="visioncontent2" style="width: 70%; margin: 0 auto; padding: 20px 0px; font-size: 20px; text-align: center;">This is your Services Section closing paragraph. It’s a great place to invite your visitor to take action; to contact you, to visit another page, to sign up for your newsletter, or even to make a purchase.</p>
-			</div>
+
+            <div class="col-md-12">
+                <p id="visioncontent2"
+                   style="width: 70%; margin: 0 auto; padding: 20px 0px; font-size: 20px; text-align: center;">This is
+                    your Services Section closing paragraph. It’s a great place to invite your visitor to take action;
+                    to contact you, to visit another page, to sign up for your newsletter, or even to make a
+                    purchase.</p>
+            </div>
         </div>
     </div>
 </section>
 <section id="contact">
     <div class="container">
-		<div class="row">
-			<div class="col-md-5 contact-content">
-					<h1>CONTACT</h1>
-					<p>This is your Contact Section. Go on, be outgoing and friendly! Let the world know the best way to reach you. Keep it amiable and light to encourage visitors to get in touch.</p>
-					<div class="social">
-						<i class="fa fa-facebook" aria-hidden="true"></i>
-						<i class="fa fa-twitter" aria-hidden="true"></i>
-						<i class="fa fa-linkedin" aria-hidden="true"></i>
-					</div>
-			</div>
-			<div class="col-md-6 contact-form">
-					<div class="col-md-6 contact-name">
-						<input type="text" placeholder="Name">
-					</div>
-					<div class="col-md-6 contact-email">
-						<input type="text" placeholder="Email">
-					</div>
-					<div class="col-md-12 contact-subject">
-						<input type="text" placeholder="Subject">
-					</div>
-					<div class="col-md-12 contact-phone">
-						<input type="text" placeholder="Phone">
-					</div>
-					<div class="col-md-12 contact-address">
-						<input type="text" placeholder="Address">
-					</div>
-					<div class="col-md-12 contact-message">
-						<input type="text" placeholder="Message">
-					</div>
-			</div>
-		</div>
+        <div class="row">
+            <div class="col-md-5 contact-content">
+                <h1>CONTACT</h1>
+                <p>This is your Contact Section. Go on, be outgoing and friendly! Let the world know the best way to
+                    reach you. Keep it amiable and light to encourage visitors to get in touch.</p>
+                <div class="social">
+                    <i class="fa fa-facebook" aria-hidden="true"></i>
+                    <i class="fa fa-twitter" aria-hidden="true"></i>
+                    <i class="fa fa-linkedin" aria-hidden="true"></i>
+                </div>
+            </div>
+            <div class="col-md-6 contact-form">
+                <div class="col-md-6 contact-name">
+                    <input type="text" placeholder="Name">
+                </div>
+                <div class="col-md-6 contact-email">
+                    <input type="text" placeholder="Email">
+                </div>
+                <div class="col-md-12 contact-subject">
+                    <input type="text" placeholder="Subject">
+                </div>
+                <div class="col-md-12 contact-phone">
+                    <input type="text" placeholder="Phone">
+                </div>
+                <div class="col-md-12 contact-address">
+                    <input type="text" placeholder="Address">
+                </div>
+                <div class="col-md-12 contact-message">
+                    <input type="text" placeholder="Message">
+                </div>
+            </div>
+        </div>
     </div>
 </section>
 <div class="col-md-12 footer" style="background: black; ">
@@ -588,7 +629,7 @@ our strategically smart performance and energetic people.</p>
 
 <script src="js/classie.js"></script>
 <script src="js/cbpAnimatedHeader.js"></script>
-
+<script src="js/bootstrap-hover-dropdown.min.js"></script>
 <script src="js/jqBootstrapValidation.js"></script>
 <script src="js/jquery.leanModal.min_.js"></script>
 <script src="js/firebase.js"></script>
