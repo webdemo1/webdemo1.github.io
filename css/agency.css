@@ -186,6 +186,26 @@ h1, h2, h3, h4, h5, h6 {
     color: black;
 }
 
+#clients .col-md-3{
+    text-align: center;
+}
+
+#clients{
+    background-color: #494947;
+}
+
+#clients h1{
+    margin-bottom: 100px;
+    text-align: center;
+    color: white;
+    font-size: 45px;
+}
+
+.menu-signin:hover{
+    border: 1px solid #494947 !important;
+    border-radius: 5px;
+}
+
 @media (min-width: 768px) {
     .navbar-default {
         background-color: white;
