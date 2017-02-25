@@ -59,12 +59,12 @@ $(document).ready(function () {
     }
     
     $(".menu-signin").mouseenter(function () {
-        $("#bodybackground").css({'opacity': '0.5', 'background-color': 'black'});
+        $("#bodybackground").css({'opacity': '0.5', 'background-color': 'black','display': 'block'});
         $("#menuvip").addClass('open');
     });
 
     $(".menu-signin").mouseleave(function () {
-        $("#bodybackground").css({'opacity': '1', 'background-color': ''});
+        $("#bodybackground").css({'opacity': '1', 'background-color': '','display': 'none'});
         $("#menuvip").removeClass('open');
     });
 	
