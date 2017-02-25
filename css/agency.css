@@ -186,22 +186,23 @@ h1, h2, h3, h4, h5, h6 {
     color: black;
 }
 
-#clients .col-md-3{
+#clients .col-md-3 {
     text-align: center;
+    padding: 10px;
 }
 
-#clients{
+#clients {
     background-color: #494947;
 }
 
-#clients h1{
+#clients h1 {
     margin-bottom: 100px;
     text-align: center;
     color: white;
     font-size: 45px;
 }
 
-.menu-signin:hover{
+.menu-signin:hover {
     border: 1px solid #494947 !important;
     border-radius: 5px;
 }
@@ -246,36 +247,37 @@ h1, h2, h3, h4, h5, h6 {
         left: 0px;
         right: 0px;
     }
-	
-	.visoncol .col-md-4 {
-    background-color: white;
-    color: black;
-    margin: 0px 10px;
-    width: 30%;
-}
-.visoncol .col-md-4{
-    background-color: white;
+
+    .visoncol .col-md-4 {
+        background-color: white;
+        color: black;
+        margin: 0px 10px;
+        width: 30%;
+    }
+
+    .visoncol .col-md-4 {
+        background-color: white;
         color: #61615E;
-    padding: 0px;
-    height: 631px;
-	float: left;
-}
+        padding: 0px;
+        height: 631px;
+        float: left;
+    }
 
-.visoncol .col-md-4 img{
-	    width: 100%;
-    object-fit: cover;
-    height: 200px;
-}
+    .visoncol .col-md-4 img {
+        width: 100%;
+        object-fit: cover;
+        height: 200px;
+    }
 
-.visoncol .col-md-4 h4{
-	    font-size: 36px;
-    padding: 50px 0px;
-}
-.visoncol .col-md-4 button
-{
-	margin: 50px 0px;
-	color: white;
-	}
+    .visoncol .col-md-4 h4 {
+        font-size: 36px;
+        padding: 50px 0px;
+    }
+
+    .visoncol .col-md-4 button {
+        margin: 50px 0px;
+        color: white;
+    }
 }
 
 header {
@@ -335,9 +337,10 @@ header .intro-text .intro-heading {
         line-height: 75px;
         margin-bottom: 50px
     }
-	#about{
-	        padding: 250px 0px;
-		}
+
+    #about {
+        padding: 250px 0px;
+    }
 }
 
 section {
@@ -557,7 +560,7 @@ section h3.section-subheading {
     margin-bottom: 0
 }
 
-.menu-style .menu-li-style{
+.menu-style .menu-li-style {
     background-color: white !important;
     float: left;
     width: 50%;
@@ -660,19 +663,20 @@ section h3.section-subheading {
 }
 
 @media (max-width: 767px) {
-	#portfolio{
-		    height: 1000px !important;
-	}
-	
-	.portfolio-content p {
-		width: 90% !important;
-		margin: 0 auto;
-	}
-	
-	#vision p{
-		width: 90% !important;
-				margin: 0 auto;
-	}
+    #portfolio {
+        height: 1000px !important;
+    }
+
+    .portfolio-content p {
+        width: 90% !important;
+        margin: 0 auto;
+    }
+
+    #vision p {
+        width: 90% !important;
+        margin: 0 auto;
+    }
+
     #about h2 {
         font-size: 30px !important;
     }
@@ -769,49 +773,55 @@ section h3.section-subheading {
         background: #fff;
         -webkit-transform: translate(-40px, 0) rotate(45deg);
     }
-	
-	.navbar-brand {
-		padding: 0px;
-    font: inherit;
-    font-size: 17px !important;
-    color: black;
-    margin-top: 17px;
-    height: auto;
-	}
-	
-	#about{
-		    padding: 150px 0px;
-	}
-	
-	#contact .contact-form {
-		float: left !important;
-		width: 100%;
-	}
-	
-	#contact .contact-content{padding: 0px 30px;}
-	
+
+    .navbar-brand {
+        padding: 0px;
+        font: inherit;
+        font-size: 17px !important;
+        color: black;
+        margin-top: 17px;
+        height: auto;
+    }
+
+    #about {
+        padding: 150px 0px;
+    }
+
+    #contact .contact-form {
+        float: left !important;
+        width: 100%;
+    }
+
+    #contact .contact-content {
+        padding: 0px 30px;
+    }
+
 }
 
+@media (min-width: 768px) and (max-width: 991px) {
+    .navbar-default .navbar-brand {
+        padding: 0px;
+        font: inherit;
+        font-size: 20px !important;
+        color: black;
+        height: 0px;
+        margin-top: 10px;
+    }
 
-@media (min-width: 768px) and (max-width: 991px){
-	.navbar-default .navbar-brand{
-		padding: 0px;
-		font: inherit;
-		font-size: 20px !important;
-		color: black;
-		height: 0px;
-		margin-top: 10px;
-	}
+    #contact .contact-form {
+        width: 100%;
+    }
 }
 
-@media (max-width: 991px){
-		#accordion-wrapper .slide img {
-		width: 200px !important;
-		object-fit: cover;
-	}
-	#accordion-wrapper {
-		margin: 0 auto !important;
-	}
+@media (max-width: 991px) {
+    #accordion-wrapper .slide img {
+        width: 200px !important;
+        object-fit: cover;
+    }
+
+    #accordion-wrapper {
+        margin: 0 auto !important;
+    }
 }
 
 .team-member {
@@ -1152,7 +1162,7 @@ img::-moz-selection {
 }
 
 #myModal .nav-tabs > li {
-	margin-bottom: -2px;
+    margin-bottom: -2px;
     width: 50%;
     text-align: center;
 }
@@ -1198,7 +1208,6 @@ img::-moz-selection {
     background: #8BC34A;
     color: white;
 }
-
 
 #vision {
     background: #8BC34A;
@@ -1279,7 +1288,8 @@ video.fillWidth {
     left: 0px;
     right: 0px;
 }
-.background-content h1{
+
+.background-content h1 {
     position: absolute;
     text-align: center;
     left: 0px;
@@ -1291,7 +1301,7 @@ video.fillWidth {
     margin: -50px 0px;
 }
 
-.background-content a{
+.background-content a {
     position: absolute;
     left: 50%;
     text-align: center;
@@ -1302,110 +1312,109 @@ video.fillWidth {
     color: white;
 }
 
-.background-content a:hover, .background-content a:focus{
-	text-decoration: none;
+.background-content a:hover, .background-content a:focus {
+    text-decoration: none;
 }
-.learn-more{
-	border-radius: 50px;
+
+.learn-more {
+    border-radius: 50px;
     border: none;
-		background-color: rgba(73, 73, 71, 0.63);
-	    width: 120px;
+    background-color: rgba(73, 73, 71, 0.63);
+    width: 120px;
     height: 44px;
 }
 
-.portfolio-content{
-	    text-align: center;
+.portfolio-content {
+    text-align: center;
 }
 
-.portfolio-content h1{
-	font-size: 40px;
+.portfolio-content h1 {
+    font-size: 40px;
 }
 
-.portfolio-content 	p{
-	    width: 60%;
+.portfolio-content p {
+    width: 60%;
     margin: 0 auto;
     padding: 20px 0px;
 }
 
-#about{
-	    background-color: #ccc;
+#about {
+    background-color: #ccc;
 }
 
-#portfolio{
-	    background-color: #eee;
+#portfolio {
+    background-color: #eee;
 }
 
-
-
-#vision{
-	    color: #61615E;
+#vision {
+    color: #61615E;
 }
 
-#portfolio .image-group{
-	width: 100%;
-	position:relative;
+#portfolio .image-group {
+    width: 100%;
+    position: relative;
 }
 
-#portfolio .image-group .image{
-	position: absolute;
-		z-index: 1;
+#portfolio .image-group .image {
+    position: absolute;
+    z-index: 1;
 }
 
-#portfolio .image-group .image img{
+#portfolio .image-group .image img {
     width: 100%;
     float: left;
     height: 500px;
     object-fit: cover;
-	opacity: 0.7;
+    opacity: 0.7;
 }
 
-#portfolio .image-group-mobile .image img{
-	width: 100%;
+#portfolio .image-group-mobile .image img {
+    width: 100%;
     height: 500px;
     object-fit: cover;
 }
 
-#accordion-wrapper .slide img{
-	width: 600px;
-	object-fit: cover;
+#accordion-wrapper .slide img {
+    width: 600px;
+    object-fit: cover;
 }
 
-#accordion-wrapper .caption{
+#accordion-wrapper .caption {
     background: white;
-	width: 500px;
-	margin-bottom: 20px;
+    width: 500px;
+    margin-bottom: 20px;
 }
 
-#accordion-wrapper .caption p{
-	color: black;
+#accordion-wrapper .caption p {
+    color: black;
     font-size: 18px;
     font-weight: 700;
 }
 
-#accordion-wrapper{
-	margin: 0 15px;
+#accordion-wrapper {
+    margin: 0 15px;
 }
 
-#contact p{
-	padding-top: 15px;
-	font-size: 20px;
+#contact p {
+    padding-top: 15px;
+    font-size: 20px;
 }
 
-#contact .social{
-	padding: 15px;
+#contact .social {
+    padding: 15px;
 }
 
-#contact .social i{
-	font-size: 20px;
+#contact .social i {
+    font-size: 20px;
     padding-right: 15px;
 }
 
-#contact .contact-form{
-	float: right;
+#contact .contact-form {
+    float: right;
 }
 
-#contact .contact-form input{
-	width: 100%;
+#contact .contact-form input {
+    width: 100%;
     border: none;
     border-bottom: 1px solid black;
     color: black;
@@ -1415,32 +1424,36 @@ video.fillWidth {
 }
 
 #contact .contact-form input::-webkit-input-placeholder { /* Chrome/Opera/Safari */
-  color: black;
-  font-weight: 300
-}
-#contact .contact-form input::-moz-placeholder { /* Firefox 19+ */
-  color: black;
-  font-weight: 300
-}
-#contact .contact-form input:-ms-input-placeholder { /* IE 10+ */
-  color: black;
-  font-weight: 300
-}
-#contact .contact-form input:-moz-placeholder { /* Firefox 18- */
-  color: black;
-  font-weight: 300
+    color: black;
+    font-weight: 300
 }
 
-#contact .contact-form .contact-message input{
-	height: 150px;
+#contact .contact-form input::-moz-placeholder { /* Firefox 19+ */
+    color: black;
+    font-weight: 300
+}
+
+#contact .contact-form input:-ms-input-placeholder { /* IE 10+ */
+    color: black;
+    font-weight: 300
+}
+
+#contact .contact-form input:-moz-placeholder { /* Firefox 18- */
+    color: black;
+    font-weight: 300
+}
+
+#contact .contact-form .contact-message input {
+    height: 150px;
     padding: 0 5px 100px;
 }
-.btn-success{
-	margin: 0 auto;
+
+.btn-success {
+    margin: 0 auto;
     display: table;
 }
 
-.nav>li>a {
+.nav > li > a {
     position: relative;
     display: block;
     padding: 15px 14px;
