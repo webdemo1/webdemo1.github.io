@@ -57,6 +57,16 @@ $(document).ready(function () {
             $(this).closest('.image').find('img').css({'-webkit-transform': 'scale(1,1)', '-ms-transform': 'scale(1,1)', 'transform': 'scale(1,1)', 'opacity': 0.7});
         }); */
     }
+    
+    $(".menu-signin").mouseenter(function () {
+        $("#bodybackground").css({'opacity': '0.5', 'background-color': 'black'});
+        $("#menuvip").addClass('open');
+    });
+
+    $(".menu-signin").mouseleave(function () {
+        $("#bodybackground").css({'opacity': '1', 'background-color': ''});
+        $("#menuvip").removeClass('open');
+    });
 	
 	
 
