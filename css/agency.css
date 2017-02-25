@@ -149,7 +149,7 @@ h1, h2, h3, h4, h5, h6 {
     text-transform: uppercase;
     font-weight: 400;
     letter-spacing: 1px;
-    color: black;
+    color: white;
 }
 
 .navbar-default .nav li a:hover {
@@ -183,7 +183,7 @@ h1, h2, h3, h4, h5, h6 {
     text-transform: uppercase;
     font-weight: 400;
     letter-spacing: 1px;
-    color: black;
+    color: white;
 }
 
 #clients .col-md-3 {
@@ -204,11 +204,18 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 .menu-signin:hover {
-    border: 1px solid #494947 !important;
-    border-radius: 5px;
+    box-shadow: 0 0px 2px #76889e;
+}
+
+.menu-signin:hover>small, .menu-signin:hover>b{
+    color: white !important;
 }
 
 @media (min-width: 768px) {
+    .navbar {
+        background-color: #232f3e !important;
+        color: white !important;
+    }
     .navbar-default {
         background-color: white;
         padding: 5px;
@@ -568,6 +575,7 @@ section h3.section-subheading {
     text-align: center;
     clear: none;
     border-right: 1px solid #ddd;
+    color: black !important;
 }
 
 @media (min-width: 768px) {
@@ -779,7 +787,7 @@ section h3.section-subheading {
         padding: 0px;
         font: inherit;
         font-size: 17px !important;
-        color: black;
+        color: black !important;
         margin-top: 17px;
         height: auto;
     }
