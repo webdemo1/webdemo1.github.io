@@ -67,7 +67,15 @@ $(document).ready(function () {
         $("#bodybackground").css({'opacity': '1', 'background-color': '','display': 'none'});
         $("#menuvip").removeClass('open');
     });
-	
-	
+
+    $("#menuvipdropdown").mouseenter(function () {
+        $("#bodybackground").css({'opacity': '0.5', 'background-color': 'black','display': 'block'});
+        $("#menuvip").addClass('open');
+    });
+
+    $("#menuvipdropdown").mouseleave(function () {
+        $("#bodybackground").css({'opacity': '1', 'background-color': '','display': 'none'});
+        $("#menuvip").removeClass('open');
+    });
 
 });
