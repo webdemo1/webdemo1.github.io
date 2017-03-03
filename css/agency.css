@@ -892,6 +892,9 @@ section h3.section-subheading {
 }
 
 @media (max-width: 991px) {
+    #accordion-wrapper .caption-rotate{
+        padding: 20px !important;
+    }
     #accordion-wrapper .slide img {
         width: 200px !important;
         object-fit: cover;
@@ -1473,12 +1476,13 @@ video.fillWidth {
     background: white;
     margin-bottom: -81px;
     position: absolute;
-    padding: 20px;
+    padding: 5px 40px;
     left: 0;
     top: inherit;
     bottom: 0px;
     width: 100%;
     margin-left: 20px;
+    padding-top: 10px;
 }
 
 #accordion-wrapper .caption-rotate p {
