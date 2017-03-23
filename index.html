@@ -172,6 +172,26 @@
     </div><!-- end .header-unit -->
 </div>
 
+<div class="modal fade" id="testModal" role="dialog">
+    <div class="modal-dialog">
+
+        <!-- Modal content-->
+        <div class="modal-content">
+            <div class="modal-header">
+                <button type="button" class="close" data-dismiss="modal">&times;</button>
+                <h4 class="modal-title">Modal Header</h4>
+            </div>
+            <div class="modal-body">
+                <img src="images/4.jpg" class="img-responsive">
+            </div>
+            <div class="modal-footer">
+                <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+            </div>
+        </div>
+
+    </div>
+</div>
+
 <div class="modal fade bs-modal-sm" id="myModal" tabindex="-1" role="dialog" aria-labelledby="mySmallModalLabel"
      aria-hidden="true">
     <div class="modal-dialog modal-sm">
@@ -284,7 +304,7 @@
                     We keep our feet on
                     the ground to stay calm and look deeply into our clients’ expectations<br>
                     and help them achieve their goals.</p>
-                <button class="learn-more" style="margin-top: 20px;">Read More</button>
+                <button class="learn-more" data-toggle="modal" data-target="#testModal" style="margin-top: 20px;">Read More</button>
             </div>
         </div>
     </div>
@@ -302,7 +322,7 @@
 
             <div id="accordion-wrapper">
                 <div class="slide">
-                    <img id="servicesimg1" src="images/1.jpg" alt="1">
+                    <a data-toggle="modal" data-target="#testModal" ><img id="servicesimg1" src="images/1.jpg" alt="1"></a>
                     <div class="caption">
                         <p>Rustic Bread</p>
                     </div>
@@ -311,7 +331,7 @@
                     </div>
                 </div>
                 <div class="slide">
-                    <img id="servicesimg2" src="images/2.jpg" alt="1">
+                    <a data-toggle="modal" data-target="#testModal"><img id="servicesimg2" src="images/2.jpg" alt="1"></a>
                     <div class="caption">
                         <p>Rustic Beach Path</p>
                     </div>
@@ -320,7 +340,7 @@
                     </div>
                 </div>
                 <div class="slide">
-                    <img id="servicesimg3" src="images/3.jpg" alt="1">
+                    <a data-toggle="modal" data-target="#testModal"><img id="servicesimg3" src="images/3.jpg" alt="1"></a>
                     <div class="caption">
                         <p>Martini on Marble</p>
                     </div>
@@ -329,7 +349,7 @@
                     </div>
                 </div>
                 <div class="slide">
-                    <img id="servicesimg4" src="images/4.jpg" alt="1">
+                    <a data-toggle="modal" data-target="#testModal"><img id="servicesimg4" src="images/4.jpg" alt="1"></a>
                     <div class="caption">
                         <p>Martini on Marble</p>
                     </div>
@@ -338,7 +358,7 @@
                     </div>
                 </div>
                 <div class="slide">
-                    <img id="servicesimg5" src="images/5.jpg" alt="1">
+                    <a data-toggle="modal" data-target="#testModal"><img id="servicesimg5" src="images/5.jpg" alt="1"></a>
                     <div class="caption">
                         <p>Martini on Marble</p>
                     </div>
@@ -347,7 +367,7 @@
                     </div>
                 </div>
                 <div class="slide">
-                    <img id="servicesimg6" src="images/6.jpg" alt="1">
+                    <a data-toggle="modal" data-target="#testModal"><img id="servicesimg6" src="images/6.jpg" alt="1"></a>
                     <div class="caption">
                         <p>Martini on Marble</p>
                     </div>
@@ -356,7 +376,7 @@
                     </div>
                 </div>
                 <div class="slide">
-                    <img id="servicesimg7" src="images/6.jpg" alt="1">
+                    <a data-toggle="modal" data-target="#testModal"><img id="servicesimg7" src="images/1.jpg" alt="1"></a>
                     <div class="caption">
                         <p>Martini on Marble</p>
                     </div>
@@ -365,7 +385,7 @@
                     </div>
                 </div>
                 <div class="slide">
-                    <img id="servicesimg8" src="images/1.jpg" alt="1">
+                    <a data-toggle="modal" data-target="#testModal"><img id="servicesimg8" src="images/2.jpg" alt="1"></a>
                     <div class="caption">
                         <p>Martini on Marble</p>
                     </div>
@@ -374,7 +394,7 @@
                     </div>
                 </div>
                 <div class="slide">
-                    <img id="servicesimg9" src="images/2.jpg" alt="1">
+                    <a data-toggle="modal" data-target="#testModal"><img id="servicesimg9" src="images/3.jpg" alt="1"></a>
                     <div class="caption">
                         <p>Martini on Marble</p>
                     </div>
@@ -414,12 +434,12 @@
                     <img id="visionimg1" src="images/4.jpg" alt="1">
                     <h4>APPS FOR SERVICES</h4>
                     <p>Feature Subtitle</p>
-                    <button class="learn-more">Get in Touch</button>
+                    <button class="learn-more" data-toggle="modal" data-target="#testModal">Get in Touch</button>
                 </div>
                 <div class="col-md-4 text-center">
                     <h4>24/7 PHONE SUPPORT</h4>
                     <p>Feature Subtitle</p>
-                    <button class="learn-more">Get in Touch</button>
+                    <button class="learn-more" data-toggle="modal" data-target="#testModal">Get in Touch</button>
                     <img id="visionimg2" src="images/4.jpg" alt="1" style="position: absolute; bottom: 0px; left: 0px; right: 0px;
 }">
                 </div>
@@ -427,7 +447,7 @@
                     <img id="visionimg3" src="images/4.jpg" alt="1">
                     <h4>PRINT FOR BUSINESS</h4>
                     <p>Feature Subtitle</p>
-                    <button class="learn-more">Get in Touch</button>
+                    <button class="learn-more" data-toggle="modal" data-target="#testModal">Get in Touch</button>
                 </div>
             </div>
 
@@ -435,17 +455,17 @@
                 <div class="col-md-4 text-center">
                     <h4>APPS FOR SERVICES</h4>
                     <p>Feature Subtitle</p>
-                    <button class="learn-more">Get in Touch</button>
+                    <button class="learn-more" data-toggle="modal" data-target="#testModal">Get in Touch</button>
                 </div>
                 <div class="col-md-4 text-center">
                     <h4>24/7 PHONE SUPPORT</h4>
                     <p>Feature Subtitle</p>
-                    <button class="learn-more">Get in Touch</button>
+                    <button class="learn-more" data-toggle="modal" data-target="#testModal">Get in Touch</button>
                 </div>
                 <div class="col-md-4 text-center">
                     <h4>PRINT FOR BUSINESS</h4>
                     <p>Feature Subtitle</p>
-                    <button class="learn-more">Get in Touch</button>
+                    <button class="learn-more" data-toggle="modal" data-target="#testModal">Get in Touch</button>
                 </div>
             </div>
 

@@ -17,6 +17,10 @@ body {
     color: black
 }
 
+.modal-dialog {
+    width: 80% !important;
+}
+
 .text-primary {
     color: #fed136
 }
@@ -227,38 +231,39 @@ h1, h2, h3, h4, h5, h6 {
     z-index: 1;
 }
 
-
 @media (min-width: 768px) {
-    .padding-10{
+    .padding-10 {
         padding: 10px;
     }
-    .navbar-header{
+
+    .navbar-header {
         width: 100%;
     }
-    .navbar-header img{
+
+    .navbar-header img {
         width: 44px;
         height: 44px;
         object-fit: cover;
-        float:left;
+        float: left;
     }
 
-    .navbar-header .header-content-right{
+    .navbar-header .header-content-right {
         font-size: 18px;
         padding: 10px;
     }
 
-    .navbar-header .header-content-right i{
+    .navbar-header .header-content-right i {
         padding: 0px 10px;
     }
 
-
-    .navbar-header .header-content-right .header-phone{
+    .navbar-header .header-content-right .header-phone {
         padding-right: 30px;
     }
 
-    .navbar-header .header-content-right .header-card{
+    .navbar-header .header-content-right .header-card {
         padding-left: 25px;
     }
+
     .navbar-default {
         background-color: white;
         padding-top: 10px;
@@ -268,11 +273,12 @@ h1, h2, h3, h4, h5, h6 {
         border: 0;
         margin: 0px;
     }
+
     .navbar-default .nav li a {
         font-size: 16px;
     }
 
-    .navbar-default .header-background{
+    .navbar-default .header-background {
         background-color: #eee;
     }
 
@@ -338,13 +344,13 @@ h1, h2, h3, h4, h5, h6 {
         color: white;
     }
 
-    .menu-style .menu-content b{
+    .menu-style .menu-content b {
         font-size: 16px;
         padding-bottom: 5px;
         display: block;
     }
 
-    .menu-style .menu-content span{
+    .menu-style .menu-content span {
         display: block;
         font-size: 13px;
         color: #444;
@@ -738,9 +744,15 @@ section h3.section-subheading {
 
 @media (max-width: 767px) {
 
-    #accordion-wrapper .caption-rotate{
+    .modal-dialog {
+        max-width: 100% !important;
+        width: auto !important;
+    }
+
+    #accordion-wrapper .caption-rotate {
         display: none !important;
     }
+
     #portfolio {
         height: 1000px !important;
     }
@@ -892,9 +904,10 @@ section h3.section-subheading {
 }
 
 @media (max-width: 991px) {
-    #accordion-wrapper .caption-rotate{
+    #accordion-wrapper .caption-rotate {
         padding: 20px !important;
     }
+
     #accordion-wrapper .slide img {
         width: 200px !important;
         object-fit: cover;
@@ -1405,6 +1418,10 @@ video.fillWidth {
     height: 44px;
 }
 
+.learn-more:focus {
+    outline: none;
+}
+
 .portfolio-content {
     text-align: center;
 }
@@ -1472,7 +1489,7 @@ video.fillWidth {
     font-weight: 700;
 }
 
-#accordion-wrapper .caption-rotate{
+#accordion-wrapper .caption-rotate {
     background: white;
     margin-bottom: -56px;
     position: absolute;
